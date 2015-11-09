@@ -1,0 +1,10 @@
+1
+asdas sample.js:12
+
+foo bar sample.js:16 baz
+
+foo bar sample.js:6:4 baz
+
+foo bar sample.js:19 baz
+
+asdasd file: /foo/bar/baz line: 19 asdasd

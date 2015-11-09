@@ -1,0 +1,9 @@
+foobar.js:16 baz
+
+asdas [1mpls.c:125:18: [0m
+
+foo bar foobar.js:14:6 baz
+
+foo bar foobar.js:19 baz
+
+asdasd file: /foo/bar/baz line: 19 asdasd

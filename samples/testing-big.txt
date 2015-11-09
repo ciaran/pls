@@ -1,0 +1,1122 @@
+
+== Setting up Platform ==
+
+== path ==
+browserified
+== fs ==
+html5
+== crypto ==
+html5
+== process ==
+html5
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa laborum repellendus exercitationem modi deleniti et illum rerum saepe ea eaque vitae nulla, nemo magnam sunt provident praesentium excepturi fugiat neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa laborum repellendus exercitationem modi deleniti et illum rerum saepe ea eaque vitae nulla, nemo magnam sunt provident praesentium excepturi fugiat neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa laborum repellendus exercitationem modi deleniti et illum rerum saepe ea eaque vitae nulla, nemo magnam sunt provident praesentium excepturi fugiat neque. 
+
+at Context.<anonymous> (test/hash-fs.spec.js:26:8)
+
+== update ==
+{ exporting: 'cobie',
+  format: 'excel',
+  sheets: 
+   [ 'Contact',
+     'Facility',
+     'Floor',
+     'Space',
+     'Zone',
+     'Type',
+     'Component',
+     'System',
+     'Assembly',
+     'Connection',
+
+     at Context.<anonymous> (test/hash-fs.spec.js:26:8)
+
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa laborum repellendus exercitationem modi deleniti et illum rerum saepe ea eaque vitae nulla, nemo magnam sunt provident praesentium excepturi fugiat neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa laborum repellendus exercitationem modi deleniti et illum rerum saepe ea eaque vitae nulla, nemo magnam sunt provident praesentium excepturi fugiat neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa laborum repellendus exercitationem modi deleniti et illum rerum saepe ea eaque vitae nulla, nemo magnam sunt provident praesentium excepturi fugiat neque. 
+
+
+     'Spare',
+     'Resource',
+     'Job',
+     'Impact',
+     'Document',
+     'Attribute',
+     'Coordinate',
+     'Issue',
+     'Picklist' ] }
+{ COBie: 'building', sheet: 'Document', is: '0 of 4' }
+{ COBie: 'building', sheet: 'Contact', is: '1 of 4' }
+{ COBie: 'building', sheet: 'Picklist', is: '2 of 4' }
+{ COBie: 'building', sheet: 'Component', is: '3 of 4' }
+
+
+at Context.<anonymous> (test/hash-fs.spec.js:26:8)
+
+  catalog sync api
+
+    ✓ Conflicting entries do not get counted as unsynchronised
+
+  catalog client api firewall
+ENTRY: view allowed undefined CAN create
+
+    ✓ can add an entry that the user DOES have permission for
+ENTRY: view forbidden undefined CAN NOT create
+
+    ✓ fails to add an entry that the user does NOT have permission for
+ENTRY: view allowed undefined CAN create
+ENTRY: view allowed cdb9c474-6876-44b4-88d3-145fc81a92d8 CAN update
+
+    ✓ can modify an entry that the user DOES have permission for
+ENTRY: view allowed undefined CAN create
+ENTRY: view allowed 0b6fa2a4-5a85-42ae-adf7-7cc8bf2b5198 CAN NOT update
+
+    ✓ fails to modify an entry that the user does NOT have permission for
+ENTRY: view allowed undefined CAN create
+ENTRY: view allowed cddc07f4-e6bd-42f9-a7b2-5b0f7b6394ff CAN NOT delete
+
+    ✓ fails to delete the entry
+
+  catalog client api
+
+    ✓ Adds inline entries
+
+    ✓ Adds resource based entries
+
+    ✓ Adds json-as-resource entries
+
+    ✓ Add with no name gives error
+
+    ✓ Add inline with no data gives error
+
+    ✓ Add resource with no path gives error
+
+    ✓ Add json-as-resource with no data gives error
+
+    ✓ Adds entry with a ref, ref returned by get
+
+    ✓ Add trims empty ref
+
+    ✓ Add trims empty ref elements
+
+    ✓ Add does not add parent folder if ref.folder IS an ID
+
+    ✓ Add does not add parent folder if ref.folder has no name
+
+    ✓ modifies inline entry metadata, data not changed
+
+    ✓ modifies inline entry data, metadata not changed
+
+    ✓ modifies resource entry metadata, resource not changed
+
+    ✓ modifies resource entry resource, metadata not changed
+
+    ✓ modifies resource-as-json entry metadata, data not changed
+
+    ✓ modifies resource-as-json entry data, metadata not changed
+
+    ✓ modify entry ignores things it should ignore
+
+    ✓ modify entry does not add parent folder if ref.folder IS an ID
+
+    ✓ gets inline entry
+
+    ✓ gets resource entry with path
+
+    ✓ gets resource-as-json entry with data
+
+    ✓ get projects folder-path for items in nested folders
+
+    ✓ removes inline entries
+
+    ✓ removes resource entries
+
+    ✓ removes resource-as-json entries
+
+    ✓ creates docs from templates
+
+    ✓ errors on invalid entry
+
+    ✓ rejects folder cycles
+
+    ✓ moveToFolder rejects folder cycles
+ref.obj undefined
+entry { id: 'cad2bbfb-94cb-4cb7-98e8-bdf096777e99',
+  type: 'folder',
+  modified: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.825Z' },
+  sync: { local: { state: 'added' } },
+  created: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.825Z' },
+  name: 'a',
+  data: {} }
+  at Context.<anonymous> (test/hash-fs.spec.js:26:8)
+
+    ✓ addReferenceToEntry rejects folder cycles
+
+    ✓ setReferenceOfEntry rejects folder cycles
+ref.obj { newMId: [ 'n1', 'n2' ] }
+entry { id: 'd4596ae3-b4c7-4b28-9a49-cf6e92196363',
+  type: 'view',
+  modified: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.839Z' },
+  sync: { local: { state: 'added' } },
+  created: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.839Z' },
+  name: 'obj',
+  data: {},
+  ref: { obj: { newMId: [Object] } } }
+ref.obj undefined
+entry { id: 'dd900edd-2225-47b3-98b0-ad7a2ac0c9dc',
+  type: 'view',
+  modified: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.841Z' },
+  sync: { local: { state: 'added' } },
+  created: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.841Z' },
+  name: 'id',
+  data: {},
+  ref: { id: [ 'n1', 'n2' ] } }
+ref.obj undefined
+entry { id: '05f84eb5-9cfc-47c2-a74d-0bad1463fcf8',
+  type: 'view',
+  modified: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.843Z' },
+  sync: { local: { state: 'added' } },
+  created: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.843Z' },
+  name: 'folder',
+  data: {} }
+ref.obj undefined
+entry { id: 'a7ff19a3-389d-46a7-b1db-4873108d2bc1',
+  type: 'view',
+  modified: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.848Z' },
+  sync: { local: { state: 'added' } },
+  created: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.848Z' },
+  name: 'folderAliases',
+  data: {},
+  ref: { folderAliases: [ 'n1', 'n2' ] } }
+ref.obj undefined
+entry { id: '93d14f2f-be90-4a0c-9d54-56fc3ab1ef4b',
+  type: 'view',
+  modified: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.845Z' },
+  sync: { local: { state: 'added' } },
+  created: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.845Z' },
+  name: 'label',
+  data: {},
+  ref: { label: [ 'n1', 'n2' ] } }
+ref.obj undefined
+entry { id: '140c8732-27ad-48e6-9670-0d94905a5b6c',
+  type: 'view',
+  modified: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.846Z' },
+  sync: { local: { state: 'added' } },
+  created: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.846Z' },
+  name: 'template',
+  data: {} }
+
+    ✓ adds references via addReferenceToEntry when entry has no existing ref
+ref.obj { newMId: [ 'n1', 'n2' ] }
+entry { id: 'c4446738-0316-4829-b831-1f5455b3b32f',
+  type: 'view',
+  modified: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.880Z' },
+  sync: { local: { state: 'added' } },
+  created: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.880Z' },
+  name: 'obj',
+  data: {},
+  ref: { obj: { mid1: [Object], mid2: [Object], newMId: [Object] } } }
+ref.obj undefined
+entry { id: '62248528-3c03-4c5b-88de-f59b8966b635',
+  type: 'view',
+  modified: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.882Z' },
+  sync: { local: { state: 'added' } },
+  created: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.882Z' },
+  name: 'id',
+  data: {},
+  ref: { id: [ 'id1', 'id2', 'n1', 'n2' ] } }
+ref.obj undefined
+
+
+at Context.<anonymous> (test/hash-fs.spec.js:26:8)
+
+entry { id: '342b418b-5d2a-425f-8c46-bd1183ec40b3',
+  type: 'view',
+  modified: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.884Z' },
+  sync: { local: { state: 'added' } },
+  created: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.884Z' },
+  name: 'folder',
+  data: {},
+  ref: { folder: 'id1' } }
+ref.obj undefined
+entry { id: '73810c94-d8fd-4ff2-9970-54eb4b0dd526',
+  type: 'view',
+  modified: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.890Z' },
+  sync: { local: { state: 'added' } },
+  created: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.890Z' },
+  name: 'folderAliases',
+  data: {},
+  ref: { folderAliases: [ 'id1', 'id2', 'n1', 'n2' ] } }
+ref.obj undefined
+entry { id: '84aa77ee-285f-47d6-b9fd-f1000ba9b978',
+  type: 'view',
+  modified: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.886Z' },
+  sync: { local: { state: 'added' } },
+  created: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.886Z' },
+  name: 'label',
+  data: {},
+  ref: { label: [ 'id1', 'id2', 'n1', 'n2' ] } }
+ref.obj undefined
+entry { id: '50bb3eb8-5066-4da9-aca7-8025b7db1330',
+  type: 'view',
+  modified: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.888Z' },
+  sync: { local: { state: 'added' } },
+  created: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.888Z' },
+  name: 'template',
+  data: {},
+  ref: { template: 'id1' } }
+
+    ✓ adds references via addReferenceToEntry when entry has existing ref (43ms)
+ref.obj undefined
+entry { id: 'c9d9a098-0610-4d71-aa61-22690f050143',
+  type: 'view',
+  modified: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.937Z' },
+  sync: { local: { state: 'added' } },
+  created: { userId: 'mock-user', userTime: '2015-10-26T14:24:34.937Z' },
+  name: 'folderAliases',
+  data: {},
+  ref: { folderAliases: [ 'id1', 'id2' ], id: [ 'n1', 'n2' ] } }
+
+    ✓ merges new refs when addReferenceToEntry
+
+    ✓ removes references via removeReferenceFromEntry (42ms)
+
+    ✓ does nothing when removeReferenceFromEntry with no references (38ms)
+
+    ✓ prunes ref.thing when removeReferenceFromEntry removes all thing (64ms)
+
+    ✓ Does not prune ref if other things present on removeReferenceFromEntry
+
+    ✓ Prunes ref if empty on removeReferenceFromEntry
+
+    ✓ overwrites only the ref specified on setReferenceForEntry (39ms)
+
+    ✓ adds only the ref specified on setReferenceForEntry
+
+    ✓ prunes only the ref specified on setReferenceForEntry (48ms)
+
+    ✓ prunes ref if empty after setReferenceForEntry
+
+    ✓ compares file resources
+
+    ✓ allows docs to be added to root explicitly
+
+    ✓ allows folders to be added to root explicitly
+at Context.<anonymous> (test/hash-fs.spec.js:26:8)
+
+    ✓ allows docs to be added to root implicitly
+
+    ✓ allows folders to be added to root implicitly
+
+    ✓ moves entries from one folder to another
+
+    ✓ removes folder contents recursively (90ms)
+
+    ✓ flagDocumentAsEdited
+
+    ✓ sets default view if no settings
+
+    ✓ sets default view if settings
+
+    ✓ gets no default view if no settings
+
+    ✓ gets no default view if no defaultView setting
+
+    ✓ gets no default view if no default View deleted
+
+    ✓ gets no default folder if no settings
+
+    ✓ gets no default folder if no setting
+
+    ✓ sets and gets default folders
+
+    ✓ gets people and adds avatars
+
+    ✓ gets people and generates avatar or uses given avatar
+
+    ✓ get people handles no people object
+
+    ✓ get people handles empty people object
+
+    ✓ publishes changed events
+
+    ✓ can add a selection set
+
+    ✓ can add a folder with a selection set reference
+
+    ✓ can add a task with a selection set field
+ref.obj undefined
+entry { id: '59d4eb70-481a-4528-b9fa-c0e375094aa5',
+  type: 'folder',
+  modified: { userId: 'mock-user', userTime: '2015-10-26T14:24:35.672Z' },
+  sync: { local: { state: 'added' } },
+  created: { userId: 'mock-user', userTime: '2015-10-26T14:24:35.672Z' },
+  name: 'Folder',
+  data: {},
+  ref: 
+   { selectionSets: 
+      [ '4f768878-69a6-4e58-82e8-37420ceeb92d',
+        '15fe85df-f9f9-4420-9d87-f5745841d1a4' ] } }
+
+    ✓ can add and remove selection set refs
+
+  catalog client query api permissions
+
+    ✓ provides permitted actions of `read` for views
+
+    ✓ provides permitted actions of `read` and `write` for formData
+
+    ✓ provides NO permitted actions for item in folder f1
+
+  catalog client query api
+
+    ✓ find exposes isAttached
+
+    ✓ find exposes complete
+
+    ✓ find can match on assignedTo field
+
+    ✓ find can match on assignedBy field
+
+    ✓ find returns empty results if no assignedTo/By match is found
+
+    ✓ find exposes isScene if view contains filters,layouts models or selects and respects isScene query param
+
+    ✓ find exposes/projects labels
+
+    ✓ find exposes/projects folders (38ms)
+
+    ✓ find works for names
+at Context.<anonymous> (test/hash-fs.spec.js:26:8)
+
+    ✓ uses cache for incremental name search and pagination
+
+    ✓ find works for ids
+
+    ✓ find works for BIM objects
+
+    ✓ find works for templates
+
+    ✓ find works for labels
+
+    ✓ find works for modified time of now
+
+    ✓ find works for modified time
+
+    ✓ find works for folders
+
+    ✓ find works for root folder
+
+    ✓ find works for folderAliases
+
+    ✓ find ANDs arguments
+
+    ✓ find works for type
+
+    ✓ find handles entries with no ref when searching by anything
+
+    ✓ find handles entries with no ref.id when searching by id
+
+    ✓ find handles entries with no ref.obj when searching by obj
+
+    ✓ find works for forms - completed or otherwise, and can match due dates
+
+    ✓ find ignores removed by default
+
+    ✓ find does not ignore removed if required
+
+    ✓ find reports folder
+
+    ✓ omits empty folders (45ms)
+
+    ✓ find exposes colour for label entries
+
+    ✓ finds forms modified-by people
+
+    ✓ finds forms assigned-to people
+
+    ✓ finds forms modified OR assigned-to people
+
+    ✓ finds overdue forms
+
+    ✓ sorts on name
+
+    ✓ sorts folders first if asked
+
+    ✓ natural sorts on name
+
+    ✓ sorts on modified time
+
+    ✓ sorts on dueDate
+
+    ✓ sorts plans by elevation and projects level name and elevation
+
+    ✓ limit limits
+at Context.<anonymous> (test/hash-fs.spec.js:26:8)
+
+    ✓ limit returns first results if no offset
+
+    ✓ limit tells you if there are no more results
+
+    ✓ limit handles size bigger than all results
+
+    ✓ limit handles size bigger than remaining results
+
+    ✓ limit handles offset beyond end of results
+
+    ✓ limit handles no results
+
+    ✓ limit handles bad limits
+
+    ✓ limit includes only non-removed item in size by default
+
+    ✓ provides modified by user name
+
+    ✓ can find by ids
+
+    ✓ can find selection sets
+
+    ✓ can find entries that have a selection set
+
+    ✓ can find entries that have a selection set
+
+  catalog-cobie-api
+
+    ✓ should return a no bim queries
+
+    ✓ should return a no bim queries
+
+    ✓ should return a no bim queries
+
+    ✓ should return a bim-query for single element
+
+    ✓ should return selection-set queries
+
+    ✓ should not fail on dead refs
+
+  catalog conflict service
+
+    ✓ has conflicts when there are conflicts
+
+    ✓ has no conflicts when none
+
+    ✓ has no conflicts when empty
+
+    ✓ gets all conflicts
+
+    ✓ gets all conflicts when none
+
+    ✓ gets all conflicts when empty catalog
+
+    ✓ gets all conflicts when no remote entry
+
+    ✓ resolves using mine
+
+    ✓ resolves using theirs (inline)
+
+    ✓ resolves using theirs (resource download)
+
+    ✓ resolve gives error if entry removed
+
+    ✓ resolve gives error if entry no longer conflicting
+
+  catalog database diy
+
+    ✓ getEntryById returns an entry
+
+    ✓ getEntryById returns undefined if none
+
+    ✓ queries
+
+    ✓ query returns nothing if no match
+
+    ✓ inserts one entry
+
+    ✓ inserts many entries
+
+    ✓ insert many does nothing with empty array
+
+    ✓ updates one entry
+
+    ✓ updates many entries
+
+    ✓ removes one entry
+
+    ✓ removes many entries
+
+    ✓ remove many does nothing with empty array
+
+    ✓ loads catalogs once
+
+    ✓ matches any
+
+  catalog-merger
+
+    ✓ merges all states of file resources one by one
+
+    ✓ merges all states of file resources in one go (69ms)
+
+    ✓ remembers a new download job during delta merges
+
+    ✓ remembers an update download job during delta merges
+
+    ✓ merges all basic states of inline data entries one by one (49ms)
+
+    ✓ merges all basic states of inline data in one go  (103ms)
+
+    ✓ uploads just entry if resource has not changed (optimisation)
+
+    ✓ downloads (merges) just entry if resource has not change (optimisation)
+
+    ✓ preserves modify state
+
+    ✓ merges remote addition twice giving the same result
+
+    ✓ add then modify before sync uploads
+
+    ✓ add then remove locally causes remove local only (no remove_remote)
+
+    ✓ does not touch transfer objects
+
+    ✓ handles empty local
+
+    ✓ handles empty remote
+
+    ✓ handles empty local and remote
+at Context.<anonymous> (test/hash-fs.spec.js:26:8)
+
+    ✓ handles some erroneous edge cases
+
+  catalog sync api
+
+    ✓ flags jobs as complete
+
+    ✓ flags download as complete
+
+    ✓ updates ssn on first transfer
+
+    ✓ gets all jobs
+
+    ✓ removes entries without resources
+
+    ✓ removes entries with resources
+
+    ✓ removes entries with resources that have not been downloaded
+
+    ✓ marks entries as unsynchronised
+
+    ✓ merges a delta catalog
+
+    ✓ merges a delta catalog using given catalog API
+
+  catalog-write-service
+
+    ✓ should reject adding entry with missing path
+
+    ✓ should reject adding entry with missing name
+
+    ✓ should reject adding entry with missing type
+
+    ✓ should reject adding entry with missing data
+
+  events
+
+
+
+
+
+
+
+
+
+  catalog import matcher
+
+    ✓ finds nearest one, no exact matches
+
+    ✓ finds nearest one, some exact matches
+
+    ✓ handles empty query results
+
+    ✓ handles elevation zero
+
+  cobie-createForEntries
+{ COBie: { creating: 'COBie data', from: { entries: 0 } } }
+create-cobie-data: 7ms
+
+    ✓ should create nothing
+{ COBie: { creating: 'COBie data', from: { entries: 1 } } }
+create-cobie-data: 4ms
+
+    ✓ should link single unrelated document to Facility
+{ COBie: { creating: 'COBie data', from: { entries: 1 } } }
+create-cobie-data: 3ms
+
+    ✓ should link single document to correct componenet
+at Context.<anonymous> (test/hash-fs.spec.js:26:8)
+
+  entrySet
+
+    ✓ should create an object from array
+
+    ✓ should be pure func
+at Context.<anonymous> (test/hash-fs.spec.js:26:8)
+
+    ✓ should only have a single thing
+
+    ✓ should have a two things
+
+  cobie-base64
+
+    ✓ should encode same as C#
+
+    ✓ should return an IFC guid for a revitId
+
+    ✓ should be able to covert from revItId -> b64IfcGuid
+
+  cobie matchMaker
+
+    ✓ should return defualt ref if no match for ref.element
+
+    ✓ should return relationship if its a match
+
+    ✓ should return two relationships
+
+    ✓ should default relationship when the ifc-el-id is not in knownIfcIds
+
+    ✓ should create relation ship to selectionSet elements
+
+    ✓ should produce a COBie document
+
+  cobie pathDeDupe
+
+    ✓ should not change any entry
+
+    ✓ should modify guid-3 entry
+
+    ✓ should modify, guid-2 entry name and  guid-3 entry name
+
+    ✓ should not modify just because of (x)
+
+  cobie buildWorkbook
+    when building workbookdata from COBie data as JSON
+
+      ✓ should add headings when createCobieDocumentsSheet
+
+      ✓ should color data correctly when createCobieDocumentSheet
+
+      ✓ should populate data correctly when createCobieDocumentSheet
+
+      ✓ should add headings when createCobieContactSheet
+
+      ✓ should populate data correctly when createCobieContactSheet
+
+      ✓ should color cells correctly when createCobieContactSheet
+
+      ✓ should include extra field at the end
+
+      ✓ should include the instruction sheet
+    with some COBie data as JSON
+
+      ✓ should generate a mapping of ifc-guids to sheet refs
+
+  Default folder service
+
+    ✓ gets hardcoded defaults if none set
+
+    ✓ gets hardcoded defaults if catalog error
+
+    ✓ gets hardcoded defaults if no setting
+
+    ✓ gets merged defaults
+
+    ✓ get projects folder
+
+    ✓ set saves new values, removed not set values and returns new default folders
+
+    ✓ set removes old values
+
+    ✓ set does nothing if no change
+
+    ✓ set handles empty input
+
+    ✓ set handles no setting
+
+  document service
+
+    ✓ Opens and starts tracking a doc if not already tracked
+
+    ✓ Tracks documents with the same name
+
+    ✓ Opens existing if already tracking
+
+    ✓ Open fails if file in use
+
+    ✓ Publish modifies doc and carries on tracking
+
+    ✓ Revert stops tracking and unflags for edit
+
+    ✓ Revert does not stop tracking on error
+
+  entry-filters
+
+    ✓ should leave entries unchanged
+
+    ✓ should remove entries that are not readable by user
+
+  entry projector
+
+    ✓ produces `ok` summary state for complete entries
+
+    ✓ produces `unsynchronised` summary state for unsynchronised entries
+
+    ✓ produces `ok` summary state for newly added local entries
+
+    ✓ produces `unpublished` summary state for newly added local unpublished entries
+
+    ✓ produces `no_resource` summary state for resource entries that have no file
+
+    ✓ produces `removed` summary state for resource entries that have been removed
+
+    ✓ produces `out_of_date` summary state for entries with empty sync objects
+
+  entry urls
+
+    ✓ should return a remote URL when not cached
+
+    ✓ should return a local url when cached
+
+    ✓ should err non document entry
+
+    ✓ should err non hash resource
+
+    ✓ should have a download link
+
+  fifo
+
+    ✓ should create the file needed for persistance
+    with nothing persisted
+
+      ✓ should persist data to disk
+
+      ✓ should keep track of _top of fifo
+
+      ✓ should calback with bytes pushed
+
+      ✓ should not have readable data before its persisted
+
+      ✓ should not error on peek
+
+      ✓ should callback with all readable data
+
+      ✓ should not read poped data
+
+      ✓ should persist pointers to disk on pop
+    with persisted data
+
+      ✓ should read persisted pointers
+
+      ✓ should read all data up to request size
+    with > 5Mb of persisted data
+
+      ✓ should left-tuncate file to keep newest 5Mb
+
+      ✓ should write pointer area during truncate
+    after trucated
+
+      ✓ should have correct pointers
+
+  filing spec builder
+
+    ✓ returns error when no base folder has been specified
+
+    ✓ returns error when first dynamic path does not use variable
+
+    ✓ returns error when dynamic path contains unsupported variable
+
+    ✓ creates valid spec if no dynamic paths are used
+
+    ✓ creates valid spec if dynamic path is changed
+
+    ✓ creates valid spec from existing spec when valid dynamic paths are added
+
+    ✓ creates valid spec from existing spec when dynamic paths and base folder are modified
+
+  filing spec factory
+
+    ✓ creates a valid builder with root base folder if project settings does not exist
+
+    ✓ creates a valid builder with root base folder if project settings does not contain a default task folder
+
+    ✓ creates a valid builder with task folder if project settings contains a default task folder
+
+  hash filesystem
+
+    ✓ can store a json object
+
+    ✓ can read back json object
+
+    1) "after all" hook
+
+  hash filesystem
+
+    ✓ should add an array of objects
+
+    ✓ should add an array of paths
+
+  catalog import-service
+
+    ✓ handles nothing to import
+
+    ✓ imports if no existing catalog, modelId added to plans
+
+    ✓ matches existing views
+
+    ✓ matches existing plans, says which to remove, ignores plans for other models
+
+    ✓ handles undefined plan entry
+
+    ✓ matches existing 3D clip plans
+
+    ✓ matches existing sheets
+
+    ✓ prepares plans, views and sheets
+
+    ✓ prepares if no plan view or sheet
+
+    ✓ should make names safe according to validation rule
+
+    ✓ adds model IDs
+
+    ✓ addModelId handles no plans
+    when model description file has 1 view, 1 plan and 1 sheet
+
+      ✓ should return a single viewDefinition
+
+      ✓ should return a single planDefinition
+
+      ✓ should return a single sheetDefinition
+
+      ✓ should sanitise names
+
+  natural sort sorts
+
+    ✓ does not just alphanum sort
+
+    ✓ sorts undefined/null last
+
+    ✓ Does not blow up with non string input
+
+  people service
+
+    ✓ gets current user
+
+    ✓ gets a user by id
+
+    ✓ gives error if user not found
+
+  permissions service
+    module API
+
+      ✓ should get permissions from catalog
+
+      ✓ should get user id from session
+
+      ✓ should work for a single entry id
+
+      ✓ should work for a entry object
+
+      ✓ should work for a user in a group
+
+      ✓ should return common actions
+
+      ✓ honours folder acl create permissions
+
+      ✓ allows project settings to be changed
+
+      ✓ does not allows project settings to be changed
+
+  persistent-object
+
+    ✓ should provide get and save methods from its public interface
+
+    ✓ reads from disk on first get invocation
+
+    ✓ reads from cached object on n+1 invocation
+
+    ✓ persists current object to file on save
+
+    ✓ persists new object to file on save
+
+    ✓ save handles no callback
+
+  Server XHR Factory
+
+    ✓ Returns null error, parsed response, server status code and XHR client on success
+
+    ✓ Defaults to GET
+
+    ✓ Allows override of method
+
+    ✓ Sends no session token if none provided
+
+    ✓ Adds session token if asked
+
+    ✓ Gives a NetworkError if no response from server
+
+    ✓ Gives generic error on server error but still gives response and status code
+
+    ✓ Parses JSON error responses when arraybuffer requested
+
+    ✓ Gives empty JSON response when arraybuffer requested, but server returns invalid JSON error
+
+  download file in chunks
+
+    ✓ can download a file
+
+    ✓ can download a 0 byte file
+
+    ✓ stops on network or file error
+
+    ✓ stops on http error code
+
+    ✓ stops on bad transfer size
+
+    ✓ stops on negative transfer size
+
+    ✓ stops on zero transfer size
+
+    ✓ stops when file too big
+
+  sync project priorities
+
+    ✓ fetches all, merges N catalogs, gets jobs
+
+    ✓ handles fetch fail
+
+    ✓ handles no projects
+
+    ✓ handles merge fail
+
+  sync-job-heuristics
+
+    ✓ should download job with heuristicsOverriden
+
+    ✓ should skip jobs when sync.job.action equals download
+
+  sync job processor factory
+
+    ✓ Null processor for resolve_conflict
+
+    ✓ should create an upload job
+
+    ✓ should create an download job
+
+    ✓ should create a remove_local job
+
+    ✓ should create a remove_remote job
+
+    ✓ Null processor and warning for unknown job
+
+  sync job queue
+
+    ✓ prioritises folder removals after all other removals within a project
+
+    ✓ prioritises folder removals last per project
+
+    ✓ does not return jobs in projects with sync off
+
+  sync job scheduler
+
+    ✓ Consumes all jobs and does the right thing for each
+
+    ✓ handles no jobs (no log, no events, no processor created)
+
+    ✓ skips jobs it should skip (no events, log)
+
+    ✓ Silently ignores jobs with no processor 
+
+    ✓ Logs job failure and notifies history of failure 
+
+    ✓ logs network failure, but does not record as jobHistory Failure
+
+    ✓ carries on processing after failure
+
+    ✓ generates conflict events
+
+  sync project priorities
+
+    ✓ gives defaults if none
+
+    ✓ remembers settings
+
+    ✓ builds list of synchronising projects
+
+    ✓ should always have priorities for each project
+
+  task api
+
+    ✓ can add a task with empty submission
+
+    ✓ can modify a task with empty submission and retain it's folder
+
+    ✓ can add a task with two attachments
+
+    ✓ can modify a task with two attachments and retain it's folder
+
+    ✓ can add a filing spec to a task
+
+    ✓ rejects adding filing spec to anything but a template
+
+    ✓ copies first instance of assign data from submission to entry
+
+    ✓ does not copy assign data if any of the fields are not strings (userids)
+
+    ✓ can add a task with a selection field
+
+    ✓ can modify a task with a selection field and retain it's folder
+
+  task filing service
+
+    ✓ expands variables correctly
+
+    ✓ builds correct path representations when base folder exists
+
+    ✓ handles exception of root base folder when building path representations
+
+    ✓ returns error when building path representations if base folder does not exist
+
+    ✓ returns correct list of supported variables
+
+    ✓ can evaluate all variables
+
+    ✓ creates the correct folders when executing a filing spec
+
+    ✓ creates the correct folders when base folder is root
+
+    ✓ skips creating a folder if it exists when executing a filing spec
+
+    ✓ saves to default tasks folder if it exists and base folder cannot be found
+
+  view history service
+
+    ✓ does nothing if no history
+
+    ✓ goes back and forward
+
+    ✓ will not add the same view twice
+
+    ✓ will add the same camera pos for different modes
+
+    ✓ lists no recent views if none
+
+    ✓ lists only named views as recent
+
+    ✓ de-dupes recent views
+
+
+  405 passing (4s)
+  1 failing
+
+  1) hash filesystem "after all" hook:
+     TypeError: fs.rmdir is not a function
+      at Context.<anonymous> (test/hash-fs.spec.js:26:8)
+
+
