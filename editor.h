@@ -64,7 +64,7 @@ editor_command ()
 			strcat(cmd, " --line %d \"$PWD/%s\"");
 			return cmd;
 		}
-		else if(is_named_executable(env, "emacs"))
+		else if(is_named_executable(env, "emacs") || is_named_executable(env, "emacsclient"))
 		{
 			strcpy(cmd, env);
 			strcat(cmd, " +%d:%d");
