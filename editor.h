@@ -64,6 +64,12 @@ editor_command ()
 			strcat(cmd, " --line %d \"$PWD/%s\"");
 			return cmd;
 		}
+		else if(is_named_executable(env, "emacs"))
+		{
+			strcpy(cmd, env);
+			strcat(cmd, " +%d:%d");
+			return cmd;
+		}
 	}
 
 	if(!env)
