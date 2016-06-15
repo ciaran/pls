@@ -298,8 +298,10 @@ read_command ()
 		return quit;
 	case '\t':
 	case CONTROL('N'):
+	case 'j':
 		return next;
 	case CONTROL('P'):
+	case 'k':
 		return prev;
 	case CONTROL('A'):
 		return first;
